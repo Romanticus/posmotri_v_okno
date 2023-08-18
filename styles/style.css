@@ -85,7 +85,7 @@ fieldset {
 
 .search-form__fieldset {
   color: #fff;
-  font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+  font-family: "Fira Sans Condensed", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -94,15 +94,16 @@ fieldset {
 
 .search-form__textfield {
   width: 225px;
+  margin: 2px;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  outline: none;
   color: rgba(255, 255, 255, 0.7);
   font-family: inherit;
   font-size: inherit;
   background-color: transparent;
   appearance: none;
-  outline-offset: 1px;
 }
 
 .search-form__textfield:active {
@@ -133,7 +134,7 @@ fieldset {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .search-form__pseudo-checkbox {
@@ -142,7 +143,6 @@ fieldset {
   align-items: center;
   width: 19px;
   height: 19px;
-  margin-right: 5px;
   border: 1px solid #fff;
   vertical-align: middle;
 }
@@ -161,7 +161,7 @@ fieldset {
   border: 1px solid #fff;
   padding: 5px 0;
   color: #fff;
-  font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+  font-family: "Fira Sans Condensed", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -172,7 +172,12 @@ fieldset {
 
 .button:focus-visible {
   border: 1px solid #fff;
-  outline-offset: 2px;
+  box-shadow: 0px 0px 0px 1px #000, 0 0px 0px 2px #fff;
+  outline: none;
+}
+
+.button:hover {
+  text-decoration: underline;
 }
 
 .button:active {
@@ -190,8 +195,7 @@ fieldset {
 }
 
 .title {
-  min-height: 210px;
-  margin-bottom: 21px;
+  margin-bottom: 26px;
   color: #fff;
   font-family: Oswald, Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -224,7 +228,6 @@ fieldset {
 }
 
 .content__video-card-thumbnail {
-  flex: 0;
   width: 194px;
   height: 103px;
 }
@@ -240,13 +243,13 @@ fieldset {
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
-  line-height: 100%; 
+  line-height: 100%;
   text-transform: uppercase;
 }
 
 .content__video-card-description {
   color: #fff;
-  font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+  font-family: "Fira Sans Condensed", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -273,4 +276,8 @@ fieldset {
 .content__card-link:focus-visible {
   border: 1px solid #fff;
   outline: none;
+}
+
+.content__card-link:active {
+  background: #545050;
 }

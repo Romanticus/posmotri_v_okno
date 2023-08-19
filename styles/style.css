@@ -126,6 +126,10 @@ fieldset {
   border: 1px solid #fff;
 }
 
+.search-form__label:has(:active) {
+  border:0;
+}
+
 .search-form__fieldset-title {
   margin-bottom: 5px;
   font-weight: 400;
